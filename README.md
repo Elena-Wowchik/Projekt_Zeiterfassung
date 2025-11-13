@@ -1,4 +1,4 @@
-# Projekt_Zeiterfassung
+# Projekt_Zeiterfassung (NOCH IN ARBEIT)
 Dieses Projekt dient der Zeiterfassung von Weiterbildungsmaßnahmen über 12 Monate. Die Daten werden über eine Streamlit-Eingabemaske erfasst, anschließend automatisch über eine ETL-Pipeline in Power Query transformiert und in Power BI visualisiert.
 
 Projektübersicht
