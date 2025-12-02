@@ -16,7 +16,7 @@ Datum,Wochentag,Kursname,Lernart,Thema / Inhalt,Startzeit,Endzeit,Dauer (h),Lern
 2025-10-11,Samstag,ScrumPO,Selbststudium,Prüfungsvorbereitung,2025-10-11T13:00:00,2025-10-11T14:30:00,1.5,Udemy,,2025-10-12T12:32:39.518686
 2025-10-12,Sonntag,ScrumPO,Selbststudium,Prüfungsvorbereitung,2025-10-12T09:30:00,2025-10-12T11:00:00,1.5,Udemy,,2025-10-12T12:33:04.844852
 2025-10-12,Sonntag,Projekt,Selbststudium,Zeierfassung,2025-10-12T11:00:00,2025-10-12T12:45:00,1.75,Python,,2025-10-12T12:33:36.090948
-2025-10-12,Sonntag,Projekt,Selbststudium,"GitHub, streamlit",2025-10-12T12:30:00,2025-10-12T13:30:00,1.0,Python,,2025-10-12T13:17:06.498307
+"2025-10-12,Sonntag,Projekt,Selbststudium,""GitHub, streamlit"",2025-10-12T12:30:00,2025-10-12T13:30:00,1.0,Python,,2025-10-12T13:17:06.498307"
 2025-10-12,Sonntag,ScrumPO,Selbststudium,,2025-10-12T16:30:00,2025-10-12T18:00:00,1.5,Udemy,,2025-10-12T16:47:13.422645
 2025-10-13,Montag,ETL,Theorie-Video,,2025-10-13T08:30:00,2025-10-13T09:00:00,0.5,DSI,,2025-10-13T10:24:13.750578
 2025-10-13,Montag,Excel,Live-Call-Hausaufgaben,,2025-10-13T09:15:00,2025-10-13T10:15:00,1.0,DSI,,2025-10-13T10:24:37.025429
@@ -39,3 +39,5 @@ Datum,Wochentag,Kursname,Lernart,Thema / Inhalt,Startzeit,Endzeit,Dauer (h),Lern
 2025-10-22,Mittwoch,ETL,Theorie-Video,,2025-10-22T14:00:00,2025-10-22T16:30:00,2.5,DSI,,2025-10-22T16:28:04.837208
 2025-10-22,Mittwoch,ScrumPO,Selbststudium,,2025-10-22T17:00:00,2025-10-22T18:00:00,1.0,Udemy,,2025-10-22T18:39:30.828244
 2025-10-23,Donnerstag,ScrumPO,Selbststudium,,2025-10-23T09:00:00,2025-10-23T11:00:00,2.0,Udemy,,2025-10-23T11:46:47.111188
+2025-12-02,Dienstag,AWS,Live-Call-Vorlesung, aws dynamodb,2025-12-02T10:15:00,2025-12-02T11:45:00,1.5,DSI,,2025-12-02T13:19:51.349089
+2025-12-02,Dienstag,Projekt,Selbststudium,Exceltabelle ordnen,2025-12-02T13:15:00,2025-12-02T15:00:00,1.75,Excel,,2025-12-02T13:28:15.744172
