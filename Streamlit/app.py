@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from pathlib import Path
 from datetime import datetime, date, time, timedelta
-
+#streamlit run app.py
 # Importiere das Modul (gleicher Ordner)
 import courses_module as cm
 
