@@ -3,13 +3,14 @@ import sys
 import os
 
 sys.path.append(os.path.dirname(__file__))  # aktueller Ordner
-import edit_zeiterfassung
+# import edit_zeiterfassung
 
 import pandas as pd
 from datetime import datetime, timedelta
 import re  # re: reguläre Ausdrücke (z.B. für Spalten-Erkennung)
 
-CSV_FILE = "zeiterfassung.csv"  # Dateiname der CSV, die gelesen und geschrieben wird.
+CSV_FILE = r"D:\awrDATEN\lena\DATA SCIENCE INSTITUTE\Projekt_Zeiterfassung\Streamlit\zeiterfassung.csv"
+# Dateiname der CSV, die gelesen und geschrieben wird.
 # Vorteil: Wenn du die Datei umbenennen oder in einen anderen Ordner legen willst, änderst du nur diese eine Zeile.
 
 
@@ -78,7 +79,7 @@ with st.form("zeiterfassung_form"):
     weekday_en = datum.strftime("%A")  # Englischer Wochentag
     weekday = tage_deutsch[weekday_en]  # Übersetzt ins Deutsche
 
-    st.write(f"Ausgewähltes Datum: {datum.strftime('%d.%m.%Y')}, Wochentag: {weekday}")
+    # st.write(f"Ausgewähltes Datum: {datum.strftime('%d.%m.%Y')}, Wochentag: {weekday}")
     # Wochentag auf Deutsch
     tage_deutsch = {
         "Monday": "Montag",
@@ -303,6 +304,6 @@ try:
     df_display_reversed = df_display.iloc[::-1]
     st.subheader("Bisherige Einträge")
     st.dataframe(df_display_reversed)
-    edit_zeiterfassung.edit_csv(CSV_FILE)
+    # edit_zeiterfassung.edit_csv(CSV_FILE)
 except FileNotFoundError:
     st.info("Noch keine Einträge vorhanden.")
