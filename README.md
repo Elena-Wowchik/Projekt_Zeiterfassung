@@ -14,8 +14,6 @@ Einheitliche CSV-Formatierung (Datum: dd.mm.yyyy, Dauer: Stunden mit Komma)
 
 Tabelle der bisherigen Einträge mit zuletzt hinzugefügtem Eintrag oben
 
-Unterstützung für mehrere Nutzer (je Nutzer eigene CSV-Datei möglich)
-
 Vorbereitung für AWS S3 Upload und Power BI Visualisierung
 
 Robuste Handhabung alter CSV-Dateien und fehlender Spalten
