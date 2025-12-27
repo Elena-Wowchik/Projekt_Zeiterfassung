@@ -1,49 +1,38 @@
 # Projekt_Zeiterfassung (NOCH IN ARBEIT)
-Dieses Projekt dient der Zeiterfassung von Weiterbildungsmaßnahmen über 12 Monate. Die Daten werden über eine Streamlit-Eingabemaske erfasst, anschließend automatisch über eine ETL-Pipeline in Power Query transformiert und in Power BI visualisiert.
+📌 Projektübersicht
 
-Projektübersicht
+Dieses Projekt ermöglicht die digitale Zeiterfassung von Lern- und Arbeitsstunden mit einer interaktiven Streamlit-App.
+Die Daten werden als CSV gespeichert und können anschließend über AWS S3 → Glue/Athena in Power BI visualisiert werden.
 
-Ziel: Erfassen und Visualisieren von Weiterbildungszeiten und Lernarten über 12 Monate.
+Features:
 
-Technologien:
+Zeiterfassung nach Datum, Kurs, Lernart, Thema, Start-/Endzeit
 
-Streamlit – für die Eingabemaske
+Automatische Berechnung der Dauer
 
-ETL (Extract, Transform, Load) – automatische Übertragung der Daten in Power Query
+Einheitliche CSV-Formatierung (Datum: dd.mm.yyyy, Dauer: Stunden mit Komma)
 
-Power Query (Excel / Power BI) – zur Datenaufbereitung und Transformation
+Tabelle der bisherigen Einträge mit zuletzt hinzugefügtem Eintrag oben
 
-Power BI – zur Visualisierung der Daten
+Unterstützung für mehrere Nutzer (je Nutzer eigene CSV-Datei möglich)
 
-Features
+Vorbereitung für AWS S3 Upload und Power BI Visualisierung
 
-Streamlit Eingabemaske
+Robuste Handhabung alter CSV-Dateien und fehlender Spalten
 
-Erfassung von Kursen, Dauer (Stunden), Lernart (z. B. Präsenz, Online, Selbststudium) und Monat
+🛠️ Technologien
 
-Validierung der Eingaben
+Python 3.x
 
-Automatische Übertragung der Eingabedaten in das Power Query Datenmodell (ETL)
+Streamlit → interaktive GUI
 
-Datenverarbeitung
+Pandas → Datenmanagement & CSV-Verarbeitung
 
-Rohdaten werden automatisch importiert
+Boto3 → AWS S3 Upload
 
-Bereinigung, Aggregation und Berechnung von Gesamtstunden pro Monat / Lernart
+AWS S3 / Glue / Athena → Speicherung und Abfrage
 
-Historisierung der Daten für Langzeit-Tracking
-
-Visualisierung
-
-Darstellung der Weiterbildungszeiten in Power BI
-
-Interaktive Diagramme nach Monat, Kursart und Lernart
-
-Trendanalysen über 12 Monate
-
-ETL-Workflow
-
-Extract: Streamlit speichert die Daten automatisch in einer CSV/SQL-Tabelle
+Power BI → Visualisierung & Reporting
 
 Transform: Power Query verarbeitet die Rohdaten (Aggregation, Berechnung, Bereinigung)
 
