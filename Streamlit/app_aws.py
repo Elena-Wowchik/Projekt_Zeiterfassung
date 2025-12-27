@@ -1,4 +1,8 @@
 # ==============================
+#streamlit start: C:\Users\evovtch>D:
+#D:\awrDATEN\lena\DATA SCIENCE INSTITUTE\Projekt_Zeiterfassung\Streamlit>streamlit run app_aws.py
+#streamlit run "D:\awrDATEN\lena\DATA SCIENCE INSTITUTE\Projekt_Zeiterfassung\Streamlit\app_aws.py"
+
 # IMPORTS
 # ==============================
 import streamlit as st  # Streamlit für Web-App UI
@@ -36,6 +40,43 @@ except Exception as e:
     # Fehlermeldung, z.B. AccessDenied wenn Berechtigungen fehlen
     print(f"S3 Zugriff FEHLER ❌: {e}")
 
+# ===========================
+# Funktion zum Bereinigen aller Spalten
+# ============================
+
+
+def clean_dataframe_for_glue(df):
+    """
+    Alle leeren Zellen in DataFrame ersetzen, damit Glue die CSV korrekt erkennt.
+    - Textspalten: "" (leer)
+    - Zahlen/Double-Spalten: 0
+    - Dauer-Spalte DE-Format (Komma statt Punkt)
+    """
+    # Mapping: Spaltenname → Ersatzwert
+    replace_map = {
+        "Datum": "",
+        "Wochentag": "",
+        "Kursname": "",
+        "Lernart": "",
+        "Startzeit": "",
+        "Endzeit": "",
+        "Dauer (h)": 0,
+    }
+
+    for col, val in replace_map.items():
+        if col in df.columns:
+            df[col] = df[col].fillna(val)  # NAs ersetzen
+            if val != 0:
+                df[col] = df[col].replace("", val)  # leere Strings ersetzen
+            else:
+                # Für Zahlen: Komma zu Punkt, als float
+                df[col] = df[col].apply(
+                    lambda x: float(str(x).replace(",", ".")) if x != "" else 0
+                )
+
+    return df
+
+
 # ==============================
 # STREAMLIT APP SETUP
 # ==============================
@@ -67,14 +108,15 @@ def normalize_duration_column_values(series):
     - unnötige Nullen nach Komma entfernen
     """
 
+
+def normalize_duration_column_values(series):
     def fmt(v):
-        if pd.isna(v):
-            return ""
+        if pd.isna(v) or v == "":
+            return float("nan")  # Leere Felder als NaN
         if isinstance(v, (int, float)):
-            return f"{v:g}".replace(".", ",")
-        s = str(v).strip().replace(".", ",")
-        s = re.sub(r",(\d)0+$", r",\1", s)
-        return s
+            return v  # Zahl unverändert
+        s = str(v).strip().replace(",", ".")  # Komma → Punkt
+        return float(s)  # als float zurückgeben
 
     return series.apply(fmt)
 
@@ -206,13 +248,16 @@ if submitted:
 
     df = load_csv_from_s3()  # Alte CSV laden
 
+    # **Neu: alle leeren Felder bereinigen**
+    df = clean_dataframe_for_glue(df)
+
     duration_col = detect_duration_column(df)  # Spalte für Dauer erkennen
     if duration_col not in df.columns:
-        df[duration_col] = ""
+        df[duration_col] = 0
 
-    df[duration_col] = normalize_duration_column_values(
-        df[duration_col]
-    )  # Formatierung
+    # Dauer-Spalte normalisieren
+    df[duration_col] = normalize_duration_column_values(df[duration_col])
+    # Formatierung
 
     # Neue Zeile erstellen
     neue_zeile = {
@@ -249,6 +294,7 @@ if submitted:
 # ANZEIGE BISHERIGER EINTRÄGE
 # ==============================
 df_display = load_csv_from_s3()
+df_display = clean_dataframe_for_glue(df_display)
 duration_col_display = detect_duration_column(df_display)
 
 if duration_col_display in df_display.columns:
@@ -257,4 +303,4 @@ if duration_col_display in df_display.columns:
     )
 
 st.subheader("Bisherige Einträge")
-st.dataframe(df_display.iloc[::-1])  # Neueste Einträge oben anzeigen
+st.dataframe(df_display.iloc[::-1])  # Neueste Einträge oben

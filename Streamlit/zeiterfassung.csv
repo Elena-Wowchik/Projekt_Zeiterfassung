@@ -321,3 +321,13 @@ Datum;Wochentag;Kursname;Lernart;Startzeit;Endzeit;Dauer (h)
 16.12.2025;Dienstag;BigData;Selbststudium;12:00;13:00;1
 16.12.2025;Dienstag;BigData;Selbststudium;19:45;21:15;1,5
 17.12.2025;Mittwoch;Projekt;Selbststudium;10:00;13:00;3
+18.12.2025;Donnerstag;Projekt;Selbststudium;11:45;14:30;2,75
+18.12.2025;Donnerstag;Karrierecoaching;Selbststudium;15:00;15:30;0,5
+18.12.2025;Donnerstag;AWS;Theorie (Video);16:30;17:30;1
+18.12.2025;Donnerstag;Projekt;Selbststudium;18:30;19:00;0,5
+19.12.2025;Freitag;Organisation;Live-Call-Vorlesung;09:00;10:30;1,5
+19.12.2025;Freitag;Projekt;Selbststudium;11:30;13:30;2
+20.12.2025;Samstag;BigData;Theorie (Video);19:00;19:30;0,5
+22.12.2025;Montag;BigData;Theorie (Video);20:00;20:30;0,5
+23.12.2025;Dienstag;BigData;Selbststudium;11:00;13:30;2,5
+27.12.2025;Samstag;BigData;Selbststudium;16:00;17:30;1,5
