@@ -335,3 +335,9 @@ Datum;Wochentag;Kursname;Lernart;Startzeit;Endzeit;Dauer (h)
 01.01.2026;Donnerstag;BigData;Selbststudium;12:00;14:30;2,5
 16.01.2026;Freitag;Karrierecoaching;Live-Call-Vorlesung;11:00;11:30;0,5
 18.01.2026;Sonntag;Karrierecoaching;Selbststudium;10:00;12:30;2,5
+19.01.2026;Montag;Karrierecoaching;Selbststudium;10:00;14:00;4
+19.01.2026;Montag;Karrierecoaching;Selbststudium;16:30;19:00;2,5
+20.01.2026;Dienstag;Karrierecoaching;Selbststudium;10:30;14:30;4
+20.01.2026;Dienstag;Karrierecoaching;Selbststudium;18:00;20:00;2
+21.01.2026;Mittwoch;Karrierecoaching;Selbststudium;10:30;14:00;3,5
+22.01.2026;Donnerstag;Projekt;Selbststudium;09:45;14:15;4,5
