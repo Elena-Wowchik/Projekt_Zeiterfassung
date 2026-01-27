@@ -1,5 +1,6 @@
 # Projekt_Zeiterfassung (NOCH IN ARBEIT)
 📌 Projektübersicht
+[zeiterfassung_Projekt_Präsentation.pptx](https://github.com/user-attachments/files/24886483/zeiterfassung_Projekt_Prasentation.pptx)
 
 ![schemabild](https://github.com/user-attachments/assets/1d20d485-651c-4f5d-9555-25f0a6d36ee0)
 
@@ -40,4 +41,4 @@ Load: Die bereinigten Daten werden ins Power BI-Dashboard geladen
 
 
 
-[zeiterfassung_Projekt_Präsentation.pptx](https://github.com/user-attachments/files/24886483/zeiterfassung_Projekt_Prasentation.pptx)
+
