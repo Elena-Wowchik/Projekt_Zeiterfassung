@@ -38,5 +38,6 @@ Transform: Power Query verarbeitet die Rohdaten (Aggregation, Berechnung, Berein
 
 Load: Die bereinigten Daten werden ins Power BI-Dashboard geladen
 
-Optional: Automatisierung kann z. B. über geplante Tasks oder Power Automate erfolgen.
 
+
+[zeiterfassung_Projekt_Präsentation.pptx](https://github.com/user-attachments/files/24886483/zeiterfassung_Projekt_Prasentation.pptx)
