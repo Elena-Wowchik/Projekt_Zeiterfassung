@@ -1,6 +1,6 @@
 # Projekt_Zeiterfassung (NOCH IN ARBEIT)
 📌 Projektübersicht
-https://github.com/Elena-Wowchik/Projekt_Zeiterfassung/blob/main/schemabild.jpg?raw=true
+
 ![schemabild](https://github.com/user-attachments/assets/1d20d485-651c-4f5d-9555-25f0a6d36ee0)
 
 Dieses Projekt ermöglicht die digitale Zeiterfassung von Lern- und Arbeitsstunden mit einer interaktiven Streamlit-App.
