@@ -2,7 +2,8 @@
 📌 Projektübersicht
 [zeiterfassung_Projekt_Präsentation.pptx](https://github.com/user-attachments/files/24894651/zeiterfassung_Projekt_Prasentation.pptx)
 
-![schemabild](https://github.com/user-attachments/assets/1d20d485-651c-4f5d-9555-25f0a6d36ee0)
+
+![architektur](https://github.com/user-attachments/assets/2af5d997-4ff5-4373-a389-1f71a2ae4a70)
 
 Dieses Projekt ermöglicht die digitale Zeiterfassung von Lern- und Arbeitsstunden mit einer interaktiven Streamlit-App.
 Die Daten werden als CSV gespeichert und können anschließend über AWS S3 → Glue/Athena in Power BI visualisiert werden.
