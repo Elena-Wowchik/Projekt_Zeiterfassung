@@ -1,5 +1,10 @@
 # Projekt_Zeiterfassung (NOCH IN ARBEIT)
 📌 Projektübersicht
+[Uploading zeiterfassung_Projekt_Präsentation.pptx…]()
+
+
+
+![architektur](https://github.com/user-attachments/assets/2af5d997-4ff5-4373-a389-1f71a2ae4a70)
 
 Dieses Projekt ermöglicht die digitale Zeiterfassung von Lern- und Arbeitsstunden mit einer interaktiven Streamlit-App.
 Die Daten werden als CSV gespeichert und können anschließend über AWS S3 → Glue/Athena in Power BI visualisiert werden.
@@ -36,5 +41,6 @@ Transform: Power Query verarbeitet die Rohdaten (Aggregation, Berechnung, Berein
 
 Load: Die bereinigten Daten werden ins Power BI-Dashboard geladen
 
-Optional: Automatisierung kann z. B. über geplante Tasks oder Power Automate erfolgen.
+
+
 
