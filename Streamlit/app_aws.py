@@ -1,7 +1,7 @@
 # ==============================
-#streamlit start: C:\Users\evovtch>D:
-#D:\awrDATEN\lena\DATA SCIENCE INSTITUTE\Projekt_Zeiterfassung\Streamlit>streamlit run app_aws.py
-#streamlit run "D:\awrDATEN\lena\DATA SCIENCE INSTITUTE\Projekt_Zeiterfassung\Streamlit\app_aws.py"
+# streamlit start: C:\Users\evovtch>D:
+# D:\awrDATEN\lena\DATA SCIENCE INSTITUTE\Projekt_Zeiterfassung\Streamlit>streamlit run app_aws.py
+# streamlit run "D:\awrDATEN\lena\DATA SCIENCE INSTITUTE\Projekt_Zeiterfassung\Streamlit\app_aws.py"
 
 # IMPORTS
 # ==============================
@@ -18,16 +18,11 @@ import re  # Reguläre Ausdrücke, z.B. für Spalten-Erkennung
 # AWS S3 KONFIGURATION
 # ==============================
 S3_BUCKET = "zeitefassung-bucket"  # Name des S3-Buckets
-S3_KEY = "zeiterfassung/zeiterfassung.csv"  # Pfad/Key innerhalb des Buckets
+S3_KEY = "zeiterfassung/zeiterfassung.csv"
+# Pfad/Key innerhalb des Buckets
 
-# boto3-Client erstellen mit harten Zugangsdaten
-# Hinweis: Für lokale Entwicklung funktioniert, in Produktion besser Umgebungsvariablen nutzen
-s3 = boto3.client(
-    "s3",
-    region_name="eu-central-1",
-    aws_access_key_id="AKIA45JVDZCWYG3OZDN3",
-    aws_secret_access_key="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",
-)
+# boto3-Client erstellen
+s3 = boto3.client("s3", region_name="eu-central-1")
 
 # ==============================
 # S3-Verbindung testen
