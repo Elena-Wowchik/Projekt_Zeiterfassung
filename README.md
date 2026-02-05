@@ -1,6 +1,6 @@
 # Projekt_Zeiterfassung (NOCH IN ARBEIT)
 📌 Projektübersicht
-[Uploading zeiterfassung_Projekt_Präsentation.pptx…]()
+[zeiterfassung_Projekt_Präsentation.pptx](https://github.com/user-attachments/files/24982232/zeiterfassung_Projekt_Prasentation.pptx)
 
 
 
