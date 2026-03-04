@@ -1,8 +1,7 @@
 # Projekt_Zeiterfassung (NOCH IN ARBEIT)
 📌 Projektübersicht
-[zeiterfassung_Projekt_Präsentation.pptx](https://github.com/user-attachments/files/24982232/zeiterfassung_Projekt_Prasentation.pptx)
 
-
+[📥 Präsentation herunterladen](Präsentation/zeiterfassung_Projekt_Präsentation.pdf)
 
 ![architektur](https://github.com/user-attachments/assets/2af5d997-4ff5-4373-a389-1f71a2ae4a70)
 
