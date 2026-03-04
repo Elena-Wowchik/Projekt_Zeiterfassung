@@ -1,5 +1,7 @@
 # Projekt_Zeiterfassung (NOCH IN ARBEIT)
 📌 Projektübersicht
+[Hier klicken, um die Präsentation zu sehen](https://link-zur-praesentation.com)
+
 [zeiterfassung_Projekt_Präsentation.pptx](https://github.com/user-attachments/files/24982232/zeiterfassung_Projekt_Prasentation.pptx)
 
 
