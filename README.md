@@ -1,4 +1,4 @@
-# Projekt_Zeiterfassung (NOCH IN ARBEIT)
+# Projekt_Zeiterfassung (Cloudbasierte Zeiterfassung und Analyse – Aufbau einer End-to-End-Datenpipeline mit AWS und Power BI)
 📌 Projektübersicht
 
 [📥 Präsentation herunterladen](Präsentation/zeiterfassung_Projekt_Präsentation.pdf)
