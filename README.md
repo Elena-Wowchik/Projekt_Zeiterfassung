@@ -1,7 +1,7 @@
 # Projekt_Zeiterfassung (Cloudbasierte Zeiterfassung und Analyse – Aufbau einer End-to-End-Datenpipeline mit AWS und Power BI)
 📌 Projektübersicht
 
-[📥 Präsentation herunterladen](Präsentation/zeiterfassung_Projekt_Präsentation.pdf)
+[📥 Präsentation herunterladen](Cloudbasierte Zeiterfassung.pptx)
 
 ![architektur](https://github.com/user-attachments/assets/2af5d997-4ff5-4373-a389-1f71a2ae4a70)
 
