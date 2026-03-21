@@ -1,7 +1,8 @@
 # Projekt_Zeiterfassung (Cloudbasierte Zeiterfassung und Analyse – Aufbau einer End-to-End-Datenpipeline mit AWS und Power BI)
 📌 Projektübersicht
 
-[📥 Präsentation herunterladen](https://github.com/Elena-Wowchik/Projekt_Zeiterfassung/releases/download/v1.0/Cloudbasierte.Zeiterfassung.pptx)
+[📥 Präsentation herunterladen](https://github.com/Elena-Wowchik/Projekt_Zeiterfassung/releases/download/v1.0/Cloudbasierte.Zeiterfassung.pdf)
+
 
 ![architektur](https://github.com/user-attachments/assets/2af5d997-4ff5-4373-a389-1f71a2ae4a70)
 
